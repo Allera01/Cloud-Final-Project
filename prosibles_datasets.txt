@@ -1,0 +1,4 @@
+https://www.kaggle.com/datasets/dani215/fire-dataset
+https://www.kaggle.com/datasets/dbdmobile/myanimelist-dataset/data
+https://www.kaggle.com/datasets/kritanjalijain/amazon-reviews
+https://www.kaggle.com/datasets/iamtapendu/chest-x-ray-lungs-segmentation
