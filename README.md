@@ -6,6 +6,8 @@
 
 ## 3.Description of the data (Where does it come from? How was it acquired? What does it mean? What format is it? How big is it? 1 GB minimum). 
 
+https://www.kaggle.com/datasets/mohamedbakhet/amazon-books-reviews
+
 ## 4.Description of the application, programming model(s), platform and infrastructure.
 
 ## 5.Software design (architectural design, code baseline, dependencies…)
