@@ -33,7 +33,7 @@ BUCKET=gs://psyched-canto-436812-e8
 ~~~
 (hay que cambiar "mycluster" por el nombre de tu cluster)
 ~~~
-gcloud dataproc jobs submit pyspark --cluster mycluster --region=europe-southwest1 analisis.py -- $BUCKET/Books_rating.csv $BUCKET/salidaLibros (
+gcloud dataproc jobs submit pyspark --cluster mycluster --region=europe-southwest1 analisis.py -- $BUCKET/Books_rating.csv $BUCKET/salidaLibros
 ~~~
 ![ejecucion1](https://github.com/user-attachments/assets/c7a3e0e8-83f9-47db-a783-b6c7def01ef8)
 
