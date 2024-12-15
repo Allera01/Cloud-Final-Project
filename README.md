@@ -79,15 +79,19 @@ Se realizaron pruebas con diferentes configuraciones de clústeres para evaluar 
   &nbsp;&nbsp;a. 2 nodos, 2 cCPUs<br/>
   &nbsp;&nbsp;b. 2 nodos, 4 cCPUs<br/>
   &nbsp;&nbsp;c. 4 nodos, 4 cCPUs<br/>
+  
 Y se obtuvieron los siguientes resultados:<br/>
+
   &nbsp;&nbsp;a. 6 minutos. Cluster pequeño, mucho tiempo de procesamiento<br/>
   &nbsp;&nbsp;![image](https://github.com/user-attachments/assets/53e7ebd4-3431-4cde-9883-df47c069d802)<br/>
   &nbsp;&nbsp;![image](https://github.com/user-attachments/assets/5d0094f9-8c7a-4b93-9f79-0c5a233789a3)<br/>
   &nbsp;&nbsp;![image](https://github.com/user-attachments/assets/7d7de81e-d6a6-46e7-8680-4886371118f6)<br/>
+  
   &nbsp;&nbsp;b. 3 minutos. Mejor rendimiento.<br/>
   &nbsp;&nbsp;![image](https://github.com/user-attachments/assets/191d67f8-aa59-4ef0-88bb-a4fa7e957cdd)<br/>
   &nbsp;&nbsp;![image](https://github.com/user-attachments/assets/77d1d7e9-ec98-43fc-ab28-1802b0877f25)<br/>
   &nbsp;&nbsp;![image](https://github.com/user-attachments/assets/8050e6e4-cc8e-4b4d-a230-373056b63d98)<br/>
+  
   &nbsp;&nbsp;c. 1 minutos. Estable y escalado efectivo.<br/>
   &nbsp;&nbsp;![image](https://github.com/user-attachments/assets/cbb85a24-3090-408e-9040-9c49358b1780)<br/>
   &nbsp;&nbsp;![image](https://github.com/user-attachments/assets/28bc4a0b-e809-46ef-b6d2-c3f65c4237c3)<br/>
