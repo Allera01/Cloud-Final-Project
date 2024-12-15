@@ -18,7 +18,7 @@ Estos datos han sido adquiridos mediante el filtro de un dataset general de rese
 **Formato:** Los datos están en formato .csv para facilitar el análisis.<br/>
 **Tamaño:** El archivo tiene un peso aproximado de 2.7 GB y contiene los siguientes campos:<br/>
 
-  -id: Identificador del libro.<br/>
+  >-id: Identificador del libro.<br/>
   -Title: Título del libro.<br/>
   -price: Precio del libro.<br/>
   -user_id: Identificador del usuario que hizo la reseña.<br/>
