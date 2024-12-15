@@ -2,7 +2,7 @@
 
 ## 1.Description of the problem.
 El objetivo principal del programa es analizar un conjunto de datos de reseñas de libros de Amazon. Utilizando herramientas de Big Data en Google Cloud Platform, se busca extraer la siguiente información de cada libro:<br/>
->-El promedio de puntuaciones.<br/>
+- El promedio de puntuaciones.<br/>
 - El número total de reseñas.<br/>
 - La proporción de votos útiles en cada reseña.<br/>
 Este análisis proporcionará datos clave sobre la calidad de los libros y la percepción de los usuarios.
