@@ -15,8 +15,8 @@ El conjunto de datos contiene millones de registros, lo que hace que su análisi
 Usamos este dataset: https://www.kaggle.com/datasets/mohamedbakhet/amazon-books-reviews. <br/>
 Estos datos han sido adquiridos mediante el filtro de un dataset general de reseñas y metadatos de productos de Amazon.<br/>
 
-Formato: Los datos están en formato .csv para facilitar el análisis.<br/>
-Tamaño: El archivo tiene un peso aproximado de 2.7 GB y contiene los siguientes campos:<br/>
+**Formato:** Los datos están en formato .csv para facilitar el análisis.<br/>
+**Tamaño:** El archivo tiene un peso aproximado de 2.7 GB y contiene los siguientes campos:<br/>
 
   -id: Identificador del libro.<br/>
   -Title: Título del libro.<br/>
@@ -32,21 +32,21 @@ Tamaño: El archivo tiene un peso aproximado de 2.7 GB y contiene los siguientes
 ## 4.Descripción de la aplicación, modelos de programación, plataforma e infraestructura
 La aplicación se ha desarrollado en PySpark, un framework de procesamiento basado en Apache Spark, que permite trabajar con grandes volúmenes de datos de forma eficiente.<br/>
 
-Infraestructura:<br/>
-  Plataforma Cloud: Google Cloud Platform (GCP).<br/>
-  Servicio: Dataproc, un servicio gestionado de clústeres de Spark y Hadoop.<br/>
-  Almacenamiento: Google Cloud Storage, utilizado para almacenar el dataset de entrada y los resultados del análisis.<br/>
+**Infraestructura:**<br/>
+  **Plataforma Cloud:** Google Cloud Platform (GCP).<br/>
+  **Servicio:** Dataproc, un servicio gestionado de clústeres de Spark y Hadoop.<br/>
+  **Almacenamiento:** Google Cloud Storage, utilizado para almacenar el dataset de entrada y los resultados del análisis.<br/>
 
 ## 5.Diseño del software
-Arquitectura:<br/>
-  Input: Archivo CSV cargado en un bucket de Google Cloud Storage.<br/>
-  Procesamiento: El script PySpark procesa los datos en un cluster de Dataproc, calculando:<br/>
+**Arquitectura:**<br/>
+  **Input:** Archivo CSV cargado en un bucket de Google Cloud Storage.<br/>
+  **Procesamiento:** El script PySpark procesa los datos en un cluster de Dataproc, calculando:<br/>
       -Promedio de puntuaciones por libro.<br/>
       -Total de reseñas por libro.<br/>
       -Proporción promedio de votos útiles por libro (como porcentaje).<br/>
-  Output: Resultados exportados en formato CSV al bucket.<br/>
+  **Output:** Resultados exportados en formato CSV al bucket.<br/>
 
-Dependencias principales:<br/>
+**Dependencias principales:**<br/>
   PySpark.<br/>
   Google Cloud SDK.<br/>
   Acceso al dataset a través de Google Cloud Storage.<br/>
@@ -83,7 +83,7 @@ Y se obtuvieron los siguientes resultados:<br/>
   b. 3 minutos. Mejor rendimiento.<br/>
   c. 1 minutos. Estable y escalado efectivo.<br/>
 
-Overheads:<br/>
+**Overheads:**<br/>
   Tiempo de arranque del cluster: ~2 minutos.<br/>
   Latencia en lectura/escritura de Google Cloud Storage.<br/>
 
@@ -91,10 +91,10 @@ Overheads:<br/>
 Han sido utilizadas tecnicas y herramientas vistas en clase para el desarrollo de la práctica.
 
 ## 9.Conclusiones
-Objetivos alcanzados:<br/>
+**Objetivos alcanzados:**<br/>
   Se ha conseguido el procesamiento exitoso de 2.7 GB de datos, permitiendo el análisis útil de las reseñas de libros integrando efectivamente herramientas de la nube.<br/>
 
-Lecciones aprendidas:<br/>
+**Lecciones aprendidas:**<br/>
   La configuración inicial de clústeres requiere tiempo y pruebas para optimizar el rendimiento del programa, además la distribución de datos impacta considerablemente el rendimiento.<br/>
 
 Trabajos futuros:<br/>
