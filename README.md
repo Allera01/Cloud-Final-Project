@@ -5,7 +5,7 @@ El objetivo principal del programa es analizar un conjunto de datos de reseñas 
 >-El promedio de puntuaciones.<br/>
 -El número total de reseñas.<br/>
 -La proporción de votos útiles en cada reseña.<br/>
-<Este análisis proporcionará datos clave sobre la calidad de los libros y la percepción de los usuarios.
+>Este análisis proporcionará datos clave sobre la calidad de los libros y la percepción de los usuarios.
 
 ## 2.Necesidad de Big Data y Cloud
 El conjunto de datos contiene millones de registros, lo que hace que su análisis y procesamiento sea prácticamente inviable en local o con recursos limitados. Usar herramientas de Big Data como Spark y Google Cloud Dataproc nos permite procesar esta cantidad de datos eficientemente, escalando recursos según las necesidades.Trabajar en la nube tiene la ventaja de acceso flexible a recursos y una alta disponibilidad para procesar grandes cantidades de datos.
