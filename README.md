@@ -12,48 +12,48 @@ El conjunto de datos contiene millones de registros, lo que hace que su análisi
 
 ## 3.Descripción de los datos
 
-Usamos este dataset: https://www.kaggle.com/datasets/mohamedbakhet/amazon-books-reviews. 
-Estos datos han sido adquiridos mediante el filtro de un dataset general de reseñas y metadatos de productos de Amazon.
+Usamos este dataset: https://www.kaggle.com/datasets/mohamedbakhet/amazon-books-reviews. <br/>
+Estos datos han sido adquiridos mediante el filtro de un dataset general de reseñas y metadatos de productos de Amazon.<br/>
 
-Formato: Los datos están en formato .csv para facilitar el análisis.
-Tamaño: El archivo tiene un peso aproximado de 2.7 GB y contiene los siguientes campos:
+Formato: Los datos están en formato .csv para facilitar el análisis.<br/>
+Tamaño: El archivo tiene un peso aproximado de 2.7 GB y contiene los siguientes campos:<br/>
 
-  -id: Identificador del libro.
-  -Title: Título del libro.
-  -price: Precio del libro.
-  -user_id: Identificador del usuario que hizo la reseña.
-  -profileName: Nombre del usuario.
-  -helpfulness: Relación votos útiles/votos totales.
-  -score: Puntuación otorgada al libro.
-  -time: Marca temporal de la reseña.
-  -summary: Resumen de la reseña.
-  -text: Texto completo de la reseña.
+  -id: Identificador del libro.<br/>
+  -Title: Título del libro.<br/>
+  -price: Precio del libro.<br/>
+  -user_id: Identificador del usuario que hizo la reseña.<br/>
+  -profileName: Nombre del usuario.<br/>
+  -helpfulness: Relación votos útiles/votos totales.<br/>
+  -score: Puntuación otorgada al libro.<br/>
+  -time: Marca temporal de la reseña.<br/>
+  -summary: Resumen de la reseña.<br/>
+  -text: Texto completo de la reseña.<br/>
 
 ## 4.Descripción de la aplicación, modelos de programación, plataforma e infraestructura
-La aplicación se ha desarrollado en PySpark, un framework de procesamiento basado en Apache Spark, que permite trabajar con grandes volúmenes de datos de forma eficiente.
+La aplicación se ha desarrollado en PySpark, un framework de procesamiento basado en Apache Spark, que permite trabajar con grandes volúmenes de datos de forma eficiente.<br/>
 
-Infraestructura:
-  Plataforma Cloud: Google Cloud Platform (GCP).
-  Servicio: Dataproc, un servicio gestionado de clústeres de Spark y Hadoop.
-  Almacenamiento: Google Cloud Storage, utilizado para almacenar el dataset de entrada y los resultados del análisis.
+Infraestructura:<br/>
+  Plataforma Cloud: Google Cloud Platform (GCP).<br/>
+  Servicio: Dataproc, un servicio gestionado de clústeres de Spark y Hadoop.<br/>
+  Almacenamiento: Google Cloud Storage, utilizado para almacenar el dataset de entrada y los resultados del análisis.<br/>
 
 ## 5.Diseño del software
-Arquitectura:
-  Input: Archivo CSV cargado en un bucket de Google Cloud Storage.
-  Procesamiento: El script PySpark procesa los datos en un cluster de Dataproc, calculando:
-      -Promedio de puntuaciones por libro.
-      -Total de reseñas por libro.
-      -Proporción promedio de votos útiles por libro (como porcentaje).
-  Output: Resultados exportados en formato CSV al bucket.
+Arquitectura:<br/>
+  Input: Archivo CSV cargado en un bucket de Google Cloud Storage.<br/>
+  Procesamiento: El script PySpark procesa los datos en un cluster de Dataproc, calculando:<br/>
+      -Promedio de puntuaciones por libro.<br/>
+      -Total de reseñas por libro.<br/>
+      -Proporción promedio de votos útiles por libro (como porcentaje).<br/>
+  Output: Resultados exportados en formato CSV al bucket.<br/>
 
-Dependencias principales:
-  PySpark.
-  Google Cloud SDK.
-  Acceso al dataset a través de Google Cloud Storage.
+Dependencias principales:<br/>
+  PySpark.<br/>
+  Google Cloud SDK.<br/>
+  Acceso al dataset a través de Google Cloud Storage.<br/>
 
 ## 6.Uso
-El uso es simple, consta de los siguientes pasos:
-  1.primero hay que crear el cluster que queramos usar para la ejecucion:
+El uso es simple, consta de los siguientes pasos:<br/>
+  1.primero hay que crear el cluster que queramos usar para la ejecucion:<br/>
   
 ![cluster creado](https://github.com/user-attachments/assets/25bf4370-03b7-4791-86c2-edcb2e82ddaa)
 
@@ -74,32 +74,32 @@ gcloud dataproc jobs submit pyspark --cluster mycluster --region=europe-southwes
   3.Una vez ejecutado se creara en el bucket una carpeta llamada "salidaLibros" donde podremos encontrar el resultado de nuestra ejecución
 
 ## 7 Evaluación de rendimiento
-Se realizaron pruebas con diferentes configuraciones de clústeres para evaluar el rendimiento:
-  a. 2 nodos, 2 cCPUs
-  b. 3 nodos, 4 cCPUs
-  c. 4 nodos, 8 cCPUs
-Y se obtuvieron los siguientes resultados:
-  a. 6 minutos. Cluster pequeño, mucho tiempo de procesamiento
-  b. 3 minutos. Mejor rendimiento.
-  c. 1 minutos. Estable y escalado efectivo.
+Se realizaron pruebas con diferentes configuraciones de clústeres para evaluar el rendimiento:<br/>
+  a. 2 nodos, 2 cCPUs<br/>
+  b. 3 nodos, 4 cCPUs<br/>
+  c. 4 nodos, 8 cCPUs<br/>
+Y se obtuvieron los siguientes resultados:<br/>
+  a. 6 minutos. Cluster pequeño, mucho tiempo de procesamiento<br/>
+  b. 3 minutos. Mejor rendimiento.<br/>
+  c. 1 minutos. Estable y escalado efectivo.<br/>
 
-Overheads:
-  Tiempo de arranque del cluster: ~2 minutos.
-  Latencia en lectura/escritura de Google Cloud Storage.
+Overheads:<br/>
+  Tiempo de arranque del cluster: ~2 minutos.<br/>
+  Latencia en lectura/escritura de Google Cloud Storage.<br/>
 
 ## 8.Características avanzadas
 Han sido utilizadas tecnicas y herramientas vistas en clase para el desarrollo de la práctica.
 
 ## 9.Conclusiones
-Objetivos alcanzados:
-  Se ha conseguido el procesamiento exitoso de 2.7 GB de datos, permitiendo el análisis útil de las reseñas de libros integrando efectivamente herramientas de la nube.
+Objetivos alcanzados:<br/>
+  Se ha conseguido el procesamiento exitoso de 2.7 GB de datos, permitiendo el análisis útil de las reseñas de libros integrando efectivamente herramientas de la nube.<br/>
 
-Lecciones aprendidas:
-  La configuración inicial de clústeres requiere tiempo y pruebas para optimizar el rendimiento del programa, además la distribución de datos impacta considerablemente el rendimiento.
+Lecciones aprendidas:<br/>
+  La configuración inicial de clústeres requiere tiempo y pruebas para optimizar el rendimiento del programa, además la distribución de datos impacta considerablemente el rendimiento.<br/>
 
-Trabajos futuros:
-A futuro sería posible gregar más análisis sobre los datos, como análisis de sentimiento en las reseñas o palabras más utilizadas para describir cada libro en las reseñas. También podrían incorporarse formas de visualizar mejor los datos.
+Trabajos futuros:<br/>
+A futuro sería posible gregar más análisis sobre los datos, como análisis de sentimiento en las reseñas o palabras más utilizadas para describir cada libro en las reseñas. También podrían incorporarse formas de visualizar mejor los datos.<br/>
 
 ## 10.References.
-  Google Cloud Dataproc Documentation: https://cloud.google.com/dataproc/docs
+  Google Cloud Dataproc Documentation: https://cloud.google.com/dataproc/docs<br/>
   Dataset: Amazon Book Reviews - https://www.kaggle.com/datasets/mohamedbakhet/amazon-books-reviews
