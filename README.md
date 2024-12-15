@@ -77,8 +77,8 @@ gcloud dataproc jobs submit pyspark --cluster mycluster --region=europe-southwes
 ## 7 Evaluación de rendimiento
 Se realizaron pruebas con diferentes configuraciones de clústeres para evaluar el rendimiento:<br/>
   &nbsp;&nbsp;a. 2 nodos, 2 cCPUs<br/>
-  &nbsp;&nbsp;b. 3 nodos, 4 cCPUs<br/>
-  &nbsp;&nbsp;c. 4 nodos, 8 cCPUs<br/>
+  &nbsp;&nbsp;b. 2 nodos, 4 cCPUs<br/>
+  &nbsp;&nbsp;c. 4 nodos, 4 cCPUs<br/>
 Y se obtuvieron los siguientes resultados:<br/>
   &nbsp;&nbsp;a. 6 minutos. Cluster pequeño, mucho tiempo de procesamiento<br/>
   &nbsp;&nbsp;b. 3 minutos. Mejor rendimiento.<br/>
