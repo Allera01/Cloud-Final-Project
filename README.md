@@ -41,9 +41,9 @@ La aplicación se ha desarrollado en PySpark, un framework de procesamiento basa
 **Arquitectura:**<br/>
   >**Input:** Archivo CSV cargado en un bucket de Google Cloud Storage.<br/>
   **Procesamiento:** El script PySpark procesa los datos en un cluster de Dataproc, calculando:<br/>
-      -Promedio de puntuaciones por libro.<br/>
-      -Total de reseñas por libro.<br/>
-      -Proporción promedio de votos útiles por libro (como porcentaje).<br/>
+   &nbsp-Promedio de puntuaciones por libro.<br/>
+   &nbsp-Total de reseñas por libro.<br/>
+   &nbsp-Proporción promedio de votos útiles por libro (como porcentaje).<br/>
   **Output:** Resultados exportados en formato CSV al bucket.<br/>
 
 **Dependencias principales:**<br/>
