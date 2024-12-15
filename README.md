@@ -34,9 +34,9 @@ Estos datos han sido adquiridos mediante el filtro de un dataset general de rese
 La aplicación se ha desarrollado en PySpark, un framework de procesamiento basado en Apache Spark, que permite trabajar con grandes volúmenes de datos de forma eficiente.<br/>
 
 **Infraestructura:**<br/>
-  &nbsp;**Plataforma Cloud:** Google Cloud Platform (GCP).<br/>
-  &nbsp;**Servicio:** Dataproc, un servicio gestionado de clústeres de Spark y Hadoop.<br/>
-  &nbsp;**Almacenamiento:** Google Cloud Storage, utilizado para almacenar el dataset de entrada y los resultados del análisis.<br/>
+  &nbsp;&nbsp;**Plataforma Cloud:** Google Cloud Platform (GCP).<br/>
+  &nbsp;&nbsp;**Servicio:** Dataproc, un servicio gestionado de clústeres de Spark y Hadoop.<br/>
+  &nbsp;&nbsp;**Almacenamiento:** Google Cloud Storage, utilizado para almacenar el dataset de entrada y los resultados del análisis.<br/>
 
 ## 5.Diseño del software
 &nbsp;**Arquitectura:**<br/>
@@ -76,13 +76,13 @@ gcloud dataproc jobs submit pyspark --cluster mycluster --region=europe-southwes
 
 ## 7 Evaluación de rendimiento
 Se realizaron pruebas con diferentes configuraciones de clústeres para evaluar el rendimiento:<br/>
-  &nbsp;a. 2 nodos, 2 cCPUs<br/>
-  &nbsp;b. 3 nodos, 4 cCPUs<br/>
-  &nbsp;c. 4 nodos, 8 cCPUs<br/>
+  &nbsp;&nbsp;a. 2 nodos, 2 cCPUs<br/>
+  &nbsp;&nbsp;b. 3 nodos, 4 cCPUs<br/>
+  &nbsp;&nbsp;c. 4 nodos, 8 cCPUs<br/>
 Y se obtuvieron los siguientes resultados:<br/>
-  &nbsp;a. 6 minutos. Cluster pequeño, mucho tiempo de procesamiento<br/>
-  &nbsp;b. 3 minutos. Mejor rendimiento.<br/>
-  &nbsp;c. 1 minutos. Estable y escalado efectivo.<br/>
+  &nbsp;&nbsp;a. 6 minutos. Cluster pequeño, mucho tiempo de procesamiento<br/>
+  &nbsp;&nbsp;b. 3 minutos. Mejor rendimiento.<br/>
+  &nbsp;&nbsp;c. 1 minutos. Estable y escalado efectivo.<br/>
 
 **Overheads:**<br/>
   - Tiempo de arranque del cluster: ~2 minutos.<br/>
