@@ -2,7 +2,7 @@
 
 ## 1.Description of the problem.
 El objetivo principal del programa es analizar un conjunto de datos de reseñas de libros de Amazon. Utilizando herramientas de Big Data en Google Cloud Platform, se busca extraer la siguiente información de cada libro:<br/>
--El promedio de puntuaciones.<br/>
+>-El promedio de puntuaciones.<br/>
 -El número total de reseñas.<br/>
 -La proporción de votos útiles en cada reseña.<br/>
 Este análisis proporcionará datos clave sobre la calidad de los libros y la percepción de los usuarios.
@@ -33,21 +33,21 @@ Estos datos han sido adquiridos mediante el filtro de un dataset general de rese
 La aplicación se ha desarrollado en PySpark, un framework de procesamiento basado en Apache Spark, que permite trabajar con grandes volúmenes de datos de forma eficiente.<br/>
 
 **Infraestructura:**<br/>
-  **Plataforma Cloud:** Google Cloud Platform (GCP).<br/>
+  >**Plataforma Cloud:** Google Cloud Platform (GCP).<br/>
   **Servicio:** Dataproc, un servicio gestionado de clústeres de Spark y Hadoop.<br/>
   **Almacenamiento:** Google Cloud Storage, utilizado para almacenar el dataset de entrada y los resultados del análisis.<br/>
 
 ## 5.Diseño del software
 **Arquitectura:**<br/>
-  **Input:** Archivo CSV cargado en un bucket de Google Cloud Storage.<br/>
+  >**Input:** Archivo CSV cargado en un bucket de Google Cloud Storage.<br/>
   **Procesamiento:** El script PySpark procesa los datos en un cluster de Dataproc, calculando:<br/>
-      -Promedio de puntuaciones por libro.<br/>
+      >-Promedio de puntuaciones por libro.<br/>
       -Total de reseñas por libro.<br/>
       -Proporción promedio de votos útiles por libro (como porcentaje).<br/>
   **Output:** Resultados exportados en formato CSV al bucket.<br/>
 
 **Dependencias principales:**<br/>
-  PySpark.<br/>
+  >PySpark.<br/>
   Google Cloud SDK.<br/>
   Acceso al dataset a través de Google Cloud Storage.<br/>
 
@@ -75,31 +75,31 @@ gcloud dataproc jobs submit pyspark --cluster mycluster --region=europe-southwes
 
 ## 7 Evaluación de rendimiento
 Se realizaron pruebas con diferentes configuraciones de clústeres para evaluar el rendimiento:<br/>
-  a. 2 nodos, 2 cCPUs<br/>
+  >a. 2 nodos, 2 cCPUs<br/>
   b. 3 nodos, 4 cCPUs<br/>
   c. 4 nodos, 8 cCPUs<br/>
 Y se obtuvieron los siguientes resultados:<br/>
-  a. 6 minutos. Cluster pequeño, mucho tiempo de procesamiento<br/>
+  >a. 6 minutos. Cluster pequeño, mucho tiempo de procesamiento<br/>
   b. 3 minutos. Mejor rendimiento.<br/>
   c. 1 minutos. Estable y escalado efectivo.<br/>
 
 **Overheads:**<br/>
-  Tiempo de arranque del cluster: ~2 minutos.<br/>
+  >Tiempo de arranque del cluster: ~2 minutos.<br/>
   Latencia en lectura/escritura de Google Cloud Storage.<br/>
 
 ## 8.Características avanzadas
 Han sido utilizadas tecnicas y herramientas vistas en clase para el desarrollo de la práctica.
 
 ## 9.Conclusiones
-**Objetivos alcanzados:**<br/>
+>**Objetivos alcanzados:**<br/>
   Se ha conseguido el procesamiento exitoso de 2.7 GB de datos, permitiendo el análisis útil de las reseñas de libros integrando efectivamente herramientas de la nube.<br/>
 
-**Lecciones aprendidas:**<br/>
+>**Lecciones aprendidas:**<br/>
   La configuración inicial de clústeres requiere tiempo y pruebas para optimizar el rendimiento del programa, además la distribución de datos impacta considerablemente el rendimiento.<br/>
 
-Trabajos futuros:<br/>
+>Trabajos futuros:<br/>
 A futuro sería posible gregar más análisis sobre los datos, como análisis de sentimiento en las reseñas o palabras más utilizadas para describir cada libro en las reseñas. También podrían incorporarse formas de visualizar mejor los datos.<br/>
 
 ## 10.References.
-  Google Cloud Dataproc Documentation: https://cloud.google.com/dataproc/docs<br/>
+  >Google Cloud Dataproc Documentation: https://cloud.google.com/dataproc/docs<br/>
   Dataset: Amazon Book Reviews - https://www.kaggle.com/datasets/mohamedbakhet/amazon-books-reviews
