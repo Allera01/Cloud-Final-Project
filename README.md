@@ -5,6 +5,7 @@ El objetivo principal del programa es analizar un conjunto de datos de reseñas 
 - El promedio de puntuaciones.<br/>
 - El número total de reseñas.<br/>
 - La proporción de votos útiles en cada reseña.<br/>
+
 Este análisis proporcionará datos clave sobre la calidad de los libros y la percepción de los usuarios.
 
 ## 2.Necesidad de Big Data y Cloud
